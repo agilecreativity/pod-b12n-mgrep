@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+lein native-image
+mkdir -p ~/bin ## Note: add this to your PATH if required
+cp target/default+uberjar/pod-b12n-mgrep ~/bin/.
+source ~/.zshrc
+./smoke-test.clj
