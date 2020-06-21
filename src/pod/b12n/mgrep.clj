@@ -94,6 +94,7 @@
           (case op
             :describe (do
                         (write {"format" "edn"
+                                "readers" {"object" "clojure.core/str"}
                                 "namespaces"
                                 [{"name" "pod.b12n.mgrep"
                                   "vars" [{"name" "greplace!"}
