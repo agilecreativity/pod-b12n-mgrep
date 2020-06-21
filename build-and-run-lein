@@ -2,5 +2,5 @@
 lein native-image
 mkdir -p ~/bin ## Note: add this to your PATH if required
 cp target/default+uberjar/pod-b12n-mgrep ~/bin/.
-source ~/.zshrc
+source ~/.zshrc 2>/dev/null
 ./smoke-test.clj
